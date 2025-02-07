@@ -16,7 +16,7 @@ int main(){
         {
             mx = n / i;
             break;
-        }
+        }s
     }}
     
     cout<< n * n + mx;
