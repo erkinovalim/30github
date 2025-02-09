@@ -4,7 +4,7 @@
 
 using namespace std;
 
-ll twice(ll x)
+ll twiceee(ll x)
 {
     ll nx = x;
     ll cp = x;
