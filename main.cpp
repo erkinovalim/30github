@@ -1,32 +1,55 @@
 #include <iostream>
+#include <iomanip>
+#include <vector>
+#include <unordered_set>
+#include <set>
+#include <unordered_map>
+#include <queue>
+#include <map>
+#include <stack>
+#include <algorithm>
 #include <cmath>
-#define ll long long int
+#include <bitset>
+#define ll long long
 
 using namespace std;
+typedef pair<int, int> pii;
 
-ll bruh(ll x)
-{
-    ll nx = x;
-    ll cp = x;
+int main() {
+    cin.tie(nullptr);
+    ios_base::sync_with_stdio(false);
 
-    while(x > 0)
-    {
-        x /= 10;
-        nx *= 10;
-    }
-
-    return nx + cp;
-}
-
-int main(){
-    ll a, b; cin>>a>>b;
-    int bruh = 0;
-    for (ll i = 1; i <= 10000000; i++)
-    {
-        ll ni = twice(i);
-        if(ni >= a && ni <= b)
-            bruh++;
+    int n,k; cin>>n>>k;
+    
+    vector<int> nums(n);
+    ll sum = 0;
+    
+    for (int i = 0; i < n; i++) {
+        int input;
+        cin>>input;
+        if(input > 0)
+            sum += input;
+        
+        nums[i] = abs(input);
     }
     
-    cout<<bruh;
+    sort(nums.begin(), nums.end());
+    
+    vector<int> possible;
+    
+    for (int mask = 0; mask < (1 << 4); mask++) {
+        int tsum = 0;
+        for (int i = 0; i < 4; i++) {
+            bool apply = mask & (1 << i);
+            
+            if(apply)
+                tsum += nums[i];
+        }
+        
+        possible.push_back(tsum);
+    }
+    
+    sort(possible.begin(),possible.end());
+    
+    cout<<sum - possible[k - 1];
 }
