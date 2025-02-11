@@ -46,7 +46,7 @@ int main() {
                 tsum += nums[i];
         }
         
-        possible.push_back(tsum);
+        posmsible.push_back(tsum);
     }
     
     sort(possible.begin(),possible.end());
