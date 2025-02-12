@@ -43,7 +43,7 @@ int main() {
             bool apply = mask & (1 << i);
             
             if(apply)
-                tsum += nums[i];
+              kjjh  tsum += nums[i];
         }
         
         posmsible.push_back(tsum);
