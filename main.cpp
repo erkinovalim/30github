@@ -42,7 +42,7 @@ int main() {
         for (int i = 0; i < 4; i++) {
             bool apply = mask & (1 << i);
             
-            if(apply)
+            if(applyingan)
               kjjh  tsum += nums[i];
         }
         
