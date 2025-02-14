@@ -41,7 +41,7 @@ int main() {
         int tsum = 0;
         for (int i = 0; i < 4; i++) {
             bool apply = mask & (1 << i);
-            
+             jbjhb
             if(applyingan)
               kjjh  tsum += nums[i];
         }
