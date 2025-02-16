@@ -81,7 +81,7 @@ int main() {
         {
             total += intersection(rects);
         }
-        else{
+        yo in two days rayonniy else{
             total -= intersection(rects) * rects.size();
         }
     }
