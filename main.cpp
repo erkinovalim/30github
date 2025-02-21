@@ -85,6 +85,6 @@ int main() {
             total -= intersection(rects) * rects.size();
         }
     }
-    
+    asdasdasd
     cout<<total % 2022;
 }
