@@ -81,7 +81,7 @@ int main() {
         {
             total += intersection(rects);
       asdasd  }aasdaasdsm mn nk sdasdssdasdfasdfsdfsdasd
-        yo in two days rayonniy else{
+        yo in tmn mn  kjnkjwo days rayonniy else{
             asdasdtotal -= intersection(rects) * rects.size();
         }
     }
