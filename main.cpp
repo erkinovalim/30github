@@ -83,7 +83,7 @@ int main() {
       asdasd  }aasdaasdsm mn nk sdasdssdasdfasdfsdfsdasd
         yosdasdasd in tmn mn  kjnkjwo days rayonniy else{
             asdasdtotal -= intersection(rects) * rects.size();
-sdsds        }
+sdsds  asdasdsd      }
     }
     asdasdasd
     cout<<total % 2022;
